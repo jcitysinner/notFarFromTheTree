@@ -1,0 +1,254 @@
+a:link {
+  color: #b68d3d;
+  text-decoration: none;
+}
+a:hover {
+  color: #dac189;
+  text-decoration: none;
+}
+a:visited {
+  color: #ad8936;
+  text-decoration: none;
+}
+p {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+  line-height: 1.7em;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.7em;
+}
+h4 {
+  font-size: 1.4em;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  color: #ebddc0;
+  margin: 0;
+}
+.fullWidth#headerWrapper,
+.fullWidth#footerWrapper {
+  background-color: #894200;
+  width: 100%;
+  margin: 0;
+}
+.fullWidth#mainContentWrapper {
+  background-color: #2c1901;
+  width: 100%;
+  margin: 0;
+}
+header {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+header img {
+  width: 150px;
+  float: left;
+}
+header h1 {
+  margin: 65px 0 0 10px;
+  float: left;
+}
+header nav {
+  clear: both;
+}
+header nav ul {
+  margin: 25px 0 0 0;
+  padding: 0;
+}
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+header nav ul li a {
+  font-size: 1.2em;
+}
+h2 {
+  margin: 0;
+}
+#mainContent {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 40px 10px;
+  clear: both;
+  overflow: hidden;
+}
+#mainContent section.regPoutines,
+#mainContent section.awePoutines,
+#mainContent section.unholyPoutines {
+  clear: both;
+}
+#mainContent section.leftColumn {
+  width: 48%;
+  margin-right: 2%;
+  float: left;
+}
+#mainContent aside.rightColumn {
+  width: 48%;
+  margin-left: 2%;
+  float: left;
+  text-align: center;
+}
+#mainContent aside.rightColumn img {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+#mainContent section#newsSection {
+  background-color: #3d1d00;
+  padding: 25px;
+  clear: both;
+}
+#mainContent section#newsSection article {
+  border-bottom: 5px solid #894200;
+  margin-bottom: 15px;
+}
+footer {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+}
+.poutineListing {
+  float: left;
+  display: inline-block;
+  width: 23%;
+  margin: 0 1.265%;
+  margin: 0 2% 0 0;
+  text-align: center;
+}
+.poutineListing img {
+  width: 100%;
+}
+.poutineListing h3 {
+  font-size: 1.2em;
+  display: block;
+  height: 40px;
+  vertical-align: bottom;
+}
+form {
+  width: 100%;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+form label {
+  width: 100%;
+}
+form label .labelappend {
+  display: inline-block;
+  padding: 7px;
+  width: 100%;
+  background-color: #dac189;
+  color: #fff;
+}
+form label input[type="text"] {
+  -webkit-appearance: none;
+  -mox-appearance: none;
+  width: 100%;
+  border: 1px solid #fff;
+  background-color: #894200;
+  color: #fff;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  padding: 5px;
+  text-transform: uppercase;
+}
+form input[type="submit"] {
+  width: 25%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #894200;
+  border: none;
+  padding: 7px;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+  header nav ul li a {
+    font-size: 1.5em;
+  }
+  #mainContent section.leftColumn {
+    width: 100%;
+    margin-right: 0%;
+    float: none;
+  }
+  #mainContent aside.rightColumn {
+    width: 100%;
+    margin-left: 0%;
+    float: none;
+  }
+  #mainContent section#newsSection {
+    margin-top: 25px;
+  }
+  .poutineListing {
+    float: left;
+    display: inline-block;
+    width: 44%;
+    margin: 0 2.42%;
+  }
+  .nonMobile {
+    display: none;
+  }
+  form input[type="submit"] {
+    padding: 15px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  header {
+    text-align: center;
+  }
+  header img {
+    width: 150px;
+    float: none;
+  }
+  header h1 {
+    margin: 0;
+    float: none;
+  }
+  header nav ul li {
+    margin: 0 10px;
+  }
+  p {
+    font-size: 1em;
+  }
+  .poutineListing {
+    float: left;
+    display: inline-block;
+    width: 90%;
+    margin: 0 4.95%;
+  }
+  #mainContent section#newsSection {
+    padding: 0;
+    background-color: #2c1901;
+  }
+}

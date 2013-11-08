@@ -1,0 +1,232 @@
+@import 'includes/brand.less';
+@import 'includes/typography.less';
+@import 'includes/mixins.less';
+
+* {
+  .box-sizing;
+}
+
+body {
+  font-family: @bodyfont;
+  font-size: 1em;
+  color: @white;
+  margin: 0;
+}
+
+.fullWidth#headerWrapper, .fullWidth#footerWrapper{
+	background-color: @brown;
+	width: 100%;
+	margin: 0;
+}
+.fullWidth#mainContentWrapper{
+	background-color: @darkBrown;
+	width: 100%;
+	margin: 0;
+}
+
+header{
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 20px 10px;
+	img{
+		width: 150px;
+		float: left;
+	}
+	h1{
+		margin: 65px 0 0 10px;
+		float: left;	
+	}
+	nav{
+		clear: both;
+		ul{
+			margin: 25px 0 0 0;
+			padding: 0;
+			li{
+				display: inline-block;
+				margin-right: 20px;
+				a{
+					font-size: 1.2em;
+				}
+			}
+		}
+	}
+}
+h2{
+	margin: 0;
+}
+#mainContent{
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 40px 10px;
+	clear: both;
+	overflow: hidden;
+	section.regPoutines, section.awePoutines, section.unholyPoutines{
+		clear: both;
+	}
+	section.leftColumn{
+		width:48%;
+		margin-right: 2%;
+		float: left;
+
+	}
+	aside.rightColumn{
+		width:48%;
+		margin-left: 2%;
+		float: left;
+		text-align: center;
+		img{
+				margin-top: 20px;
+				width: 100%;
+				max-width: 800px;
+			}
+	}
+	section#newsSection{
+		clear:both;
+		background-color: darken(@brown, 15%);
+		padding: 25px;
+		clear: both;
+		article{
+			border-bottom: 5px solid @brown;
+			margin-bottom: 15px;
+		}
+	}
+}
+footer{
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 20px 10px;
+	text-align: center;
+	p{
+		margin: 0;
+	}
+}
+
+.poutineListing{
+	.widthfloat(23%);
+	margin: 0 2% 0 0;
+	text-align: center;
+	img{
+		width:100%;
+	}
+	h3{
+		font-size:1.2em;
+		display: block;
+		height: 40px;
+		vertical-align: bottom;
+	}
+}
+
+form{
+    width: 100%;
+    font-family: @headingsfont;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    label{
+      width: 100%;
+      .labelappend{
+        display: inline-block;
+        padding: 7px;
+        width: 100%;
+        background-color: @cream;
+        color: #fff;
+      }
+      input[type="text"]{
+        -webkit-appearance: none;
+        -mox-appearance: none;
+        width: 100%;
+        border: 1px solid #fff;
+        background-color: @brown;
+        color: #fff;
+        font-family: @headingsfont;
+        padding: 5px;
+        text-transform: uppercase;
+      }
+    }
+    input[type="submit"]{
+      width: 25%;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-color: @brown;
+      border: none;
+      padding: 7px;
+      font-family: @headingsfont;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+
+
+@media screen and (max-width: 800px) {
+	header{
+		nav ul li a{
+			font-size: 1.5em;
+		}
+	}
+	#mainContent{
+		section.leftColumn{
+			width:100%;
+			margin-right: 0%;
+			float: none;
+
+		}
+		aside.rightColumn{
+			width:100%;
+			margin-left: 0%;
+			float: none;
+			
+		}
+		section#newsSection{
+			margin-top: 25px;
+		}
+	}
+	.poutineListing{
+		.widthfloat(44%);
+	}
+	.nonMobile{
+		display: none;
+	}
+	form{
+		input[type="submit"]{
+			padding: 15px;
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	header{
+		text-align: center;
+		img{
+			width: 150px;
+			float: none;
+		}
+		h1{
+			margin: 0;
+			float: none;	
+		}
+		nav{
+			ul{
+				li{
+					margin: 0 10px;
+
+				}
+			}
+		}
+	}
+
+	p{
+		font-size: 1em;
+	}
+	.poutineListing{
+		.widthfloat(90%);
+	}
+	#mainContent{
+		section#newsSection{
+			padding: 0;
+			background-color: @darkBrown;
+		}
+	}
+}
