@@ -9,224 +9,251 @@
 body {
   font-family: @bodyfont;
   font-size: 1em;
-  color: @white;
+  color: @black;
   margin: 0;
+  background-color: @beige;
 }
 
-.fullWidth#headerWrapper, .fullWidth#footerWrapper{
-	background-color: @brown;
-	width: 100%;
-	margin: 0;
-}
-.fullWidth#mainContentWrapper{
-	background-color: @darkBrown;
-	width: 100%;
-	margin: 0;
-}
-
-header{
-	width: 100%;
+.wrapper{
 	max-width: 1170px;
-	margin: 0 auto;
-	padding: 20px 10px;
-	img{
-		width: 150px;
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+#headerWrapper{
+	overflow: hidden;
+	background-color: white;
+	padding-bottom: 10px;
+	#mainLogo{
 		float: left;
+		width: 160px;
+		margin-left: 140px;
+		margin-top: 15px;
 	}
-	h1{
-		margin: 65px 0 0 10px;
-		float: left;	
+	ul{
+		float: right;
+		margin-right: 50px;
+		margin-top: 35px;
+		li{
+			margin: 0 5px;
+			display: inline-block;
+			vertical-align: middle;
+			a{
+				img{
+					width: 50px;
+
+				}
+			}
+		}
 	}
+	#donate{
+		float: right;
+		width: 140px;
+		margin-top:-30px;
+		margin-right: 10px;
+	}
+}
+
+#navWrapper{
+	background: -webkit-linear-gradient(top, @darkergreen 0%,@darkgreen 50%,@darkergreen 100%);
+	margin-top: -33px;
+	padding: 15px 0;
 	nav{
-		clear: both;
-		ul{
-			margin: 25px 0 0 0;
-			padding: 0;
+		text-align: center;
+		ul {
+			margin: 0;
 			li{
 				display: inline-block;
-				margin-right: 20px;
+				margin: 0 25px;
 				a{
 					font-size: 1.2em;
+					.textShadow;
 				}
 			}
 		}
 	}
 }
-h2{
-	margin: 0;
-}
-#mainContent{
-	width: 100%;
-	max-width: 1170px;
-	margin: 0 auto;
-	padding: 40px 10px;
-	clear: both;
+
+#sliderWrapper{
+	background: -webkit-linear-gradient(top, @darkergreen 0%,@darkgreen 50%,@darkergreen 100%);
 	overflow: hidden;
-	section.regPoutines, section.awePoutines, section.unholyPoutines{
+	text-align: center;
+	padding: 20px 0;
+	section{
+		display: inline-block;
 		clear: both;
-	}
-	section.leftColumn{
-		width:48%;
-		margin-right: 2%;
-		float: left;
-
-	}
-	aside.rightColumn{
-		width:48%;
-		margin-left: 2%;
-		float: left;
-		text-align: center;
+		margin: 0 35px;
+		color: @white;
 		img{
-				margin-top: 20px;
-				width: 100%;
-				max-width: 800px;
+			height: 80px;
+			float: left;
+		}
+		div.sliderText{
+			float: left;
+			width: 200px;
+			text-align: left;
+			margin-left: 10px;
+			h1{
+				margin: 0;
+				.textShadow;
 			}
-	}
-	section#newsSection{
-		clear:both;
-		background-color: darken(@brown, 15%);
-		padding: 25px;
-		clear: both;
-		article{
-			border-bottom: 5px solid @brown;
-			margin-bottom: 15px;
+			p{
+				margin: 5px 0;
+				line-height: 1.1em;
+			}
 		}
-	}
-}
-footer{
-	width: 100%;
-	max-width: 1170px;
-	margin: 0 auto;
-	padding: 20px 10px;
-	text-align: center;
-	p{
-		margin: 0;
+
 	}
 }
 
-.poutineListing{
-	.widthfloat(23%);
-	margin: 0 2% 0 0;
-	text-align: center;
-	img{
-		width:100%;
-	}
-	h3{
-		font-size:1.2em;
-		display: block;
-		height: 40px;
-		vertical-align: bottom;
-	}
-}
-
-form{
-    width: 100%;
-    font-family: @headingsfont;
-    font-size: 0.8em;
-    text-transform: uppercase;
-    label{
-      width: 100%;
-      .labelappend{
-        display: inline-block;
-        padding: 7px;
-        width: 100%;
-        background-color: @cream;
-        color: #fff;
-      }
-      input[type="text"]{
-        -webkit-appearance: none;
-        -mox-appearance: none;
-        width: 100%;
-        border: 1px solid #fff;
-        background-color: @brown;
-        color: #fff;
-        font-family: @headingsfont;
-        padding: 5px;
-        text-transform: uppercase;
-      }
-    }
-    input[type="submit"]{
-      width: 25%;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      background-color: @brown;
-      border: none;
-      padding: 7px;
-      font-family: @headingsfont;
-      text-transform: uppercase;
-      cursor: pointer;
-    }
-  }
-
-
-@media screen and (max-width: 800px) {
-	header{
-		nav ul li a{
-			font-size: 1.5em;
+#mainContentWrapper{
+	background-color: @beige;
+	overflow: hidden;
+	padding-top: 35px;
+	.leftCol{
+		overflow: hidden;
+		max-width: 520px;
+		width: 44%;
+		float: left;
+		h2{
+			margin-top: 0;
+			color: @darkgreen;
+		}
+		.blogPost{
+			overflow: hidden;
+			width: 100%;
+			img{
+				float: left;
+			}
+			.floatText{
+				float: left;
+				margin-left: 20px;
+				width: 320px;
+				h3{
+					margin: 0;
+					font-size: 1.4em;
+				}
+				p{
+					margin: 0;
+				}
+				.blogDate{
+					color: @darkergreen;
+				}
+			}
+		}
+		a.readMore{
+			color: @white;
+			background-color: @brown;
+			padding: 7px;
+			margin-bottom: 30px;
+			display: inline-block;
+			float: right;
 		}
 	}
-	#mainContent{
-		section.leftColumn{
-			width:100%;
-			margin-right: 0%;
-			float: none;
-
+	.rightCol{
+		overflow: hidden;
+		max-width: 520px;
+		width: 44%;
+		float: right;
+		h2{
+			margin-top: 0;
+			color: @darkgreen;
 		}
-		aside.rightColumn{
-			width:100%;
-			margin-left: 0%;
-			float: none;
-			
-		}
-		section#newsSection{
-			margin-top: 25px;
-		}
-	}
-	.poutineListing{
-		.widthfloat(44%);
-	}
-	.nonMobile{
-		display: none;
-	}
-	form{
-		input[type="submit"]{
-			padding: 15px;
+		img{
 			width: 100%;
 		}
 	}
 }
 
-@media screen and (max-width: 400px) {
-	header{
-		text-align: center;
-		img{
-			width: 150px;
-			float: none;
-		}
-		h1{
-			margin: 0;
-			float: none;	
-		}
-		nav{
-			ul{
-				li{
-					margin: 0 10px;
-
-				}
+#sponsorsWrapper{
+	background-color: @darkgreen;
+	border-top: solid @green 10px;
+	border-bottom: solid @green 10px;
+	text-align: center;
+	color: @white;
+	margin-bottom: 50px;
+	ul{
+		border-top: dotted 2px @white;
+		width: 100%;
+		max-width: 800px;
+		margin: auto;
+		padding: 0;
+		li{
+			display: inline-block;
+			margin: 20px 10px;
+			a{
+				color: @white;
 			}
 		}
 	}
+}
 
-	p{
-		font-size: 1em;
-	}
-	.poutineListing{
-		.widthfloat(90%);
-	}
-	#mainContent{
-		section#newsSection{
+#footerWrapper{
+	background: -webkit-linear-gradient(top, @darkergreen 0%,@darkgreen 50%,@darkergreen 100%);
+
+	text-align: center;
+	padding: 25px 0;
+	.footerLists{
+		border-bottom: 1px solid darken(@green, 20%);
+		max-width: 1170px;
+		margin: 0 auto;
+		padding-bottom: 15px;	
+		ul{
+			display: inline-block;
+			vertical-align: top;
+			margin-top: 0;
+			text-align: left;
+			margin: 0 15px;
 			padding: 0;
-			background-color: @darkBrown;
+			list-style: none;
+			li h3{
+				margin: 0 0 10px;
+				font-size: 1em;
+				color: @green;
+			}
+			li a{
+				font-size: 0.8em;
+			}
 		}
+		ul.socialMedia{
+			border-right: 1px solid darken(@green, 20%);
+			padding-right: 25px;
+		}
+		.footerBlog{
+			display: inline-block;
+			vertical-align: top;
+			text-align: left;
+			margin: 0 15px;
+			h3{
+				margin-top: 0px;
+				font-size: 1em;
+				color: @green;
+			}
+		}
+		section{
+			display: inline-block;
+			text-align: left;
+			margin-top: 10px;
+			margin: 0px 15px;
+			border-left: 1px solid darken(@green, 20%);
+			height: 100px;
+			padding-left: 15px;
+			h3{
+				margin: 0px;
+				font-size: 1em;
+				color: @green;
+			}
+			p{
+				margin: 7px 0;
+				color: @white;
+				font-size: 0.8em;
+			}
+		}
+		
 	}
+	p.legal{
+			font-size: 0.8em;
+			color: @white;
+		}
 }
