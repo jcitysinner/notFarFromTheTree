@@ -58,7 +58,7 @@ body {
 #navWrapper{
 	background: -webkit-linear-gradient(top, @darkergreen 0%,@darkgreen 50%,@darkergreen 100%);
 	margin-top: -33px;
-	padding: 15px 0;
+	
 	nav{
 		text-align: center;
 		ul {
@@ -66,15 +66,36 @@ body {
 			li{
 				display: inline-block;
 				margin: 0 25px;
+				padding: 15px 0;
 				a{
 					font-size: 1.2em;
 					.textShadow;
+				}
+				&:hover ul{
+					display: block;
+				}
+				ul{
+					position: absolute;
+					display: none;
+					background-color: @darkergreen;
+					padding: 0;
+					margin-top: 15px;
+					z-index: 100;
+					width: 200px;
 				}
 			}
 		}
 	}
 }
+.drowDown{
+	display: block;
+	width: 100%;
+}
 
+#mainSliderWrapper{
+	background-color: lighten(@beige,8%);
+	padding-top: 30px;
+}
 #sliderWrapper{
 	background: -webkit-linear-gradient(top, @darkergreen 0%,@darkgreen 50%,@darkergreen 100%);
 	overflow: hidden;
@@ -164,6 +185,192 @@ body {
 			width: 100%;
 		}
 	}
+
+	p.breadCrumbs{
+		color: @darkgreen;	
+		a{
+			color: @darkgreen;	
+		}
+	}
+
+	h1.eventsPage{
+		color: @darkgreen;
+		border-bottom: 1px solid @green;
+		padding-bottom: 20px;
+	} 
+
+	.upcommingEvent{
+		
+		background-color: darken(@beige, 5%);
+		padding: 0 20px 20px;	
+		overflow: hidden;
+		clear: both;
+		margin-bottom: 30px;
+		h2{
+			color: @black;
+			text-decoration: underline;
+		}
+		.leftContent{
+			float: left;
+			width: 48%;
+			h3{
+				font-size: 1.4em;
+			}
+		}
+		.rightContent{
+			float: right;
+			width: 48%;
+			.eventInfo{
+				p{
+					display: inline-block;
+					vertical-align: top;
+					max-width: 75%;
+				}
+				p.catagory{
+					color: @darkgreen;
+					margin-right: 15px;
+					font-weight: bold;
+				}
+			}
+		}
+		p.extraText{
+			clear: both;
+			text-align: center;
+			font-weight: bold;
+			padding-top: 50px;
+		}
+	}
+	.pastEvent{
+		padding-bottom: 30px;
+		overflow: hidden;
+		clear:both;
+		.leftContent{
+			float: left;
+			width: 48%;
+			border: solid 6px white;
+			.boxShadow;
+			h3{
+				font-size: 1.4em;
+			}
+		}
+		.rightContent{
+			float: right;
+			width: 48%;
+			h2{
+				color: @black;
+				text-decoration: underline;
+				margin-top: 0px;
+			}
+			h3{
+				font-size: 1.4em;
+			}
+		}
+	}
+
+	h1.donationPage{
+		color: @darkgreen;
+		border-bottom: @green solid 1px;
+	}
+
+	.rightColumn{
+		width: 48%;
+		overflow: hidden;
+		float: right;
+		h2{
+			color: @darkgreen;
+			border-bottom: solid black 1px;
+		}
+		form{
+			h3{
+				margin: 15px 0;
+				font-weight: normal;
+				border-bottom: solid black 1px;
+			}
+			clear: all;
+			div.paymentTotal{
+				input.mainCash{
+					font-size: 2.2em;
+					padding: 5px;
+					width: 200px;
+					display: block;
+				}
+				p{
+					display: inline;
+					margin-right: 15px;
+				}
+			}
+			p{
+				margin: 0;
+			}
+			div{
+				float: left;
+				margin: 10px 0;
+			}
+			input{
+				margin: 0;
+				font-size: 1.2em;
+			}
+			.firstName, .city, .postalCode, .email, .cardNumber, .expYear{
+				width: 49%;
+				margin-right: 2%;
+				input{
+					width: 100%;
+				}
+			}
+			.lastName, .country, .phoneNumber, .expMonth{
+				width: 49%;
+				input{
+					width: 100%;
+				}
+				select{
+					width: 100%;
+				}
+			}
+			.address{
+				width: 75%;
+				margin-right: 2%;
+				input{
+					width: 100%;
+				}
+			}
+			.province{
+				width: 23%;
+				select{
+					width: 100%;
+				}
+			}
+			div.paymentInformation{
+				clear: both;
+				overflow: hidden;
+				p.input{
+					display: inline;
+					margin-right: 15px;
+				}
+				div.creditChoice{
+					width: 100%;
+				}
+				.submitDonate{
+					display: block;
+					float: none;
+					clear: both;
+					color: @white;
+					background-color: @darkgreen;
+					border: none;
+					padding: 15px 45px;
+					font-size: 1.7em;
+					font-weight: bold;
+					margin-top: 25px;
+					-webkit-transition: all 0.3s;
+					&:hover{
+						background-color: @darkergreen;
+					}
+				}
+
+			}
+		}
+
+	}	
+
 }
 
 #sponsorsWrapper{

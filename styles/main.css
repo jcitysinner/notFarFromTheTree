@@ -7,7 +7,7 @@ a:hover {
   text-decoration: none;
 }
 a:visited {
-  color: #bfbfbf;
+  color: #ffffff;
   text-decoration: none;
 }
 p {
@@ -37,6 +37,11 @@ h4 {
 }
 .textShadow {
   text-shadow: 2px 2px 2px #000000;
+}
+.boxShadow {
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
 }
 * {
   -webkit-box-sizing: border-box;
@@ -89,7 +94,6 @@ body {
 #navWrapper {
   background: -webkit-linear-gradient(top, #556a3f 0%, #607848 50%, #556a3f 100%);
   margin-top: -33px;
-  padding: 15px 0;
 }
 #navWrapper nav {
   text-align: center;
@@ -100,10 +104,31 @@ body {
 #navWrapper nav ul li {
   display: inline-block;
   margin: 0 25px;
+  padding: 15px 0;
 }
 #navWrapper nav ul li a {
   font-size: 1.2em;
   text-shadow: 2px 2px 2px #000000;
+}
+#navWrapper nav ul li:hover ul {
+  display: block;
+}
+#navWrapper nav ul li ul {
+  position: absolute;
+  display: none;
+  background-color: #556a3f;
+  padding: 0;
+  margin-top: 15px;
+  z-index: 100;
+  width: 200px;
+}
+.drowDown {
+  display: block;
+  width: 100%;
+}
+#mainSliderWrapper {
+  background-color: #fbfbf5;
+  padding-top: 30px;
 }
 #sliderWrapper {
   background: -webkit-linear-gradient(top, #556a3f 0%, #607848 50%, #556a3f 100%);
@@ -192,6 +217,200 @@ body {
 }
 #mainContentWrapper .rightCol img {
   width: 100%;
+}
+#mainContentWrapper p.breadCrumbs {
+  color: #607848;
+}
+#mainContentWrapper p.breadCrumbs a {
+  color: #607848;
+}
+#mainContentWrapper h1.eventsPage {
+  color: #607848;
+  border-bottom: 1px solid #c0d860;
+  padding-bottom: 20px;
+}
+#mainContentWrapper .upcommingEvent {
+  background-color: #e9e9c6;
+  padding: 0 20px 20px;
+  overflow: hidden;
+  clear: both;
+  margin-bottom: 30px;
+}
+#mainContentWrapper .upcommingEvent h2 {
+  color: #141414;
+  text-decoration: underline;
+}
+#mainContentWrapper .upcommingEvent .leftContent {
+  float: left;
+  width: 48%;
+}
+#mainContentWrapper .upcommingEvent .leftContent h3 {
+  font-size: 1.4em;
+}
+#mainContentWrapper .upcommingEvent .rightContent {
+  float: right;
+  width: 48%;
+}
+#mainContentWrapper .upcommingEvent .rightContent .eventInfo p {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 75%;
+}
+#mainContentWrapper .upcommingEvent .rightContent .eventInfo p.catagory {
+  color: #607848;
+  margin-right: 15px;
+  font-weight: bold;
+}
+#mainContentWrapper .upcommingEvent p.extraText {
+  clear: both;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 50px;
+}
+#mainContentWrapper .pastEvent {
+  padding-bottom: 30px;
+  overflow: hidden;
+  clear: both;
+}
+#mainContentWrapper .pastEvent .leftContent {
+  float: left;
+  width: 48%;
+  border: solid 6px white;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+}
+#mainContentWrapper .pastEvent .leftContent h3 {
+  font-size: 1.4em;
+}
+#mainContentWrapper .pastEvent .rightContent {
+  float: right;
+  width: 48%;
+}
+#mainContentWrapper .pastEvent .rightContent h2 {
+  color: #141414;
+  text-decoration: underline;
+  margin-top: 0px;
+}
+#mainContentWrapper .pastEvent .rightContent h3 {
+  font-size: 1.4em;
+}
+#mainContentWrapper h1.donationPage {
+  color: #607848;
+  border-bottom: #c0d860 solid 1px;
+}
+#mainContentWrapper .rightColumn {
+  width: 48%;
+  overflow: hidden;
+  float: right;
+}
+#mainContentWrapper .rightColumn h2 {
+  color: #607848;
+  border-bottom: solid black 1px;
+}
+#mainContentWrapper .rightColumn form {
+  clear: all;
+}
+#mainContentWrapper .rightColumn form h3 {
+  margin: 15px 0;
+  font-weight: normal;
+  border-bottom: solid black 1px;
+}
+#mainContentWrapper .rightColumn form div.paymentTotal input.mainCash {
+  font-size: 2.2em;
+  padding: 5px;
+  width: 200px;
+  display: block;
+}
+#mainContentWrapper .rightColumn form div.paymentTotal p {
+  display: inline;
+  margin-right: 15px;
+}
+#mainContentWrapper .rightColumn form p {
+  margin: 0;
+}
+#mainContentWrapper .rightColumn form div {
+  float: left;
+  margin: 10px 0;
+}
+#mainContentWrapper .rightColumn form input {
+  margin: 0;
+  font-size: 1.2em;
+}
+#mainContentWrapper .rightColumn form .firstName,
+#mainContentWrapper .rightColumn form .city,
+#mainContentWrapper .rightColumn form .postalCode,
+#mainContentWrapper .rightColumn form .email,
+#mainContentWrapper .rightColumn form .cardNumber,
+#mainContentWrapper .rightColumn form .expYear {
+  width: 49%;
+  margin-right: 2%;
+}
+#mainContentWrapper .rightColumn form .firstName input,
+#mainContentWrapper .rightColumn form .city input,
+#mainContentWrapper .rightColumn form .postalCode input,
+#mainContentWrapper .rightColumn form .email input,
+#mainContentWrapper .rightColumn form .cardNumber input,
+#mainContentWrapper .rightColumn form .expYear input {
+  width: 100%;
+}
+#mainContentWrapper .rightColumn form .lastName,
+#mainContentWrapper .rightColumn form .country,
+#mainContentWrapper .rightColumn form .phoneNumber,
+#mainContentWrapper .rightColumn form .expMonth {
+  width: 49%;
+}
+#mainContentWrapper .rightColumn form .lastName input,
+#mainContentWrapper .rightColumn form .country input,
+#mainContentWrapper .rightColumn form .phoneNumber input,
+#mainContentWrapper .rightColumn form .expMonth input {
+  width: 100%;
+}
+#mainContentWrapper .rightColumn form .lastName select,
+#mainContentWrapper .rightColumn form .country select,
+#mainContentWrapper .rightColumn form .phoneNumber select,
+#mainContentWrapper .rightColumn form .expMonth select {
+  width: 100%;
+}
+#mainContentWrapper .rightColumn form .address {
+  width: 75%;
+  margin-right: 2%;
+}
+#mainContentWrapper .rightColumn form .address input {
+  width: 100%;
+}
+#mainContentWrapper .rightColumn form .province {
+  width: 23%;
+}
+#mainContentWrapper .rightColumn form .province select {
+  width: 100%;
+}
+#mainContentWrapper .rightColumn form div.paymentInformation {
+  clear: both;
+  overflow: hidden;
+}
+#mainContentWrapper .rightColumn form div.paymentInformation p.input {
+  display: inline;
+  margin-right: 15px;
+}
+#mainContentWrapper .rightColumn form div.paymentInformation div.creditChoice {
+  width: 100%;
+}
+#mainContentWrapper .rightColumn form div.paymentInformation .submitDonate {
+  display: block;
+  float: none;
+  clear: both;
+  color: #ffffff;
+  background-color: #607848;
+  border: none;
+  padding: 15px 45px;
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-top: 25px;
+  -webkit-transition: all 0.3s;
+}
+#mainContentWrapper .rightColumn form div.paymentInformation .submitDonate:hover {
+  background-color: #556a3f;
 }
 #sponsorsWrapper {
   background-color: #607848;

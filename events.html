@@ -17,67 +17,105 @@
 <body>
 
 	<div class="fullWidth" id="headerWrapper">
-		<img src="images/logo.png">
-		<ul>
-			<li><a href="#"><img src="images/facebook.png"></a></li>
-			<li><a href="#"><img src="images/twitter.png"></a></li>
-			<li><a href="#"><img src="images/pintrest.png"></a></li>
-		</ul>
-		<a href="#"><img src="images/donate"></a>
+		<div class="wrapper">
+			<img id="mainLogo" src="images/logo.png">
+			<a href="donate.html"><img id="donate" src="images/donate.png"></a>
+			<ul>
+				<li><a href="#"><img src="images/facebook.png"></a></li>
+				<li><a href="#"><img src="images/twitter.png"></a></li>
+				<li><a href="#"><img src="images/pinterest.png"></a></li>
+			</ul>
+		</div>	
 	</div>
 
 	<div class="fullWidth" id="navWrapper">
-		<nav>
-			<ul>
-				<li><a href="#">Get Involved</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Events</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Contact Us</a></li>
-			</ul>
-		</nav>
+		<div class="wrapper">
+			<nav>
+				<ul>
+					<li><a href="#">Get Involved</a>
+						<ul>
+							<li><a href="#" class="dropDown">Volunteer</a></li>
+							<li><a href="donate.html" class="dropDown">Donate</a></li>
+							<li><a href="#" class="dropDown">Register Your Fruit Tree</a></li>
+						</ul>
+					</li>
+					<li><a href="#">About</a>
+						<ul>
+							<li><a href="#">Awards and Accolades</a></li>
+							<li><a href="#">Annual Reports</a></li>
+						</ul>
+					</li>
+					<li><a href="events.html">Events</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact Us</a>
+						<ul>
+							<li><a href="#">Request Fruit Donations</a></li>
+							<li><a href="#">Recieve Our Newsletter</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
 	</div>
 
 	<div class="fullWidth" id="mainContentWrapper">
-		<div class="mainContent">
-			<p><a>HOME</a> > <a>EVENTS</a></p>
-			<h1>Upcomming Events</h1>
+		<div class="wrapper">
+			<p class="breadCrumbs"><a href="#">HOME</a> > <a href="#">EVENTS</a></p>
+			<h1 class="eventsPage">Upcomming Events</h1>
 			<div class="upcommingEvent">
 				<h2>Event Title</h2>
-				<div class="leftCol">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue felis non laoreet ullamcorper. Suspendisse eu iaculis felis, eu egestas nibh. Vivamus ac rhoncus erat. Maecenas scelerisque et sem id laoreet. Sed a lorem adipiscing, congue nunc ac, mattis lacus. Ut ultricies sed tortor ut posuere. Nulla tristique orci ac justo suscipit, gravida volutpat erat pretium. Duis in iaculis leo. Nulla dapibus ullamcorper eros, nec ultricies purus hendrerit eget. Praesent ultrices mauris in urna dapibus, tempor rutrum orci cursus. Morbi aliquam vitae odio nec ultricies.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue felis non laoreet ullamcorper. Suspendisse eu iaculis felis, eu egestas nibh. Vivamus ac rhoncus erat. Maecenas scelerisque et sem id laoreet. Sed a lorem adipiscing, congue nunc ac, mattis lacus. Ut ultricies sed tortor ut posuere. Nulla tristique orci ac justo suscipit, gravida volutpat erat pretium. Duis in iaculis leo. Nulla dapibus ullamcorper eros, nec ultricies purus hendrerit eget. Praesent ultrices mauris in urna dapibus, tempor rutrum orci cursus. Morbi aliquam vitae odio nec ultricies.</p>
+				<div class="leftContent">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue felis non laoreet ullamcorper. Suspendisse eu iaculis felis, eu egestas nibh. Vivamus ac rhoncus erat. Maecenas scelerisque et sem id laoreet. Sed a lorem adipiscing, congue nunc ac, mattis lacus. .</p>
+					<p>Nulla tristique orci ac justo suscipit, gravida volutpat erat pretium. Duis in iaculis leo. Nulla dapibus ullamcorper eros, nec ultricies purus hendrerit eget. Praesent ultrices mauris in urna dapibus, tempor rutrum orci cursus. Morbi aliquam vitae odio nec ultricies.</p>
 				</div>
-				<div class="rightCol">
-					<p><span class="label">When</span>Friday November 15th, <br> 7:30 - 10:30pm</p>
-					<p><span class="label">Where</span>The Center for Social Innovation <br> Annex, 720 Bathurst St.</p>
-					<p><span class="label">Tickets</span> $10 at the door / $5 for 2013 volunteers and registered tree owners</p>
+				<div class="rightContent">
+					<div class="eventInfo">
+						<p class="catagory">When:</p><p>Friday November 15th, <br> 7:30 - 10:30pm</p>
+					</div>
+					
+					<div class="eventInfo">
+						<p class="catagory">Where:</p><p>The Center for Social Innovation <br> Annex, 720 Bathurst St.</p>
+					</div>
+					<div class="eventInfo">
+						<p class="catagory">Tickets:</p><p>$10 at the door / $5 for 2013 volunteers and registered tree owners</p>
+					</div>
+					
 				</div>
 				<p class="extraText">*All proceeds go to support Not Far From The Tree's tree picking program</p>
 			</div>
 			<div class="upcommingEvent">
 				<h2>Event Title</h2>
-				<div class="leftCol">
+				<div class="leftContent">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue felis non laoreet ullamcorper. Suspendisse eu iaculis felis, eu egestas nibh. Vivamus ac rhoncus erat. Maecenas scelerisque et sem id laoreet. Sed a lorem adipiscing, congue nunc ac, mattis lacus. Ut ultricies sed tortor ut posuere. Nulla tristique orci ac justo suscipit, gravida volutpat erat pretium. Duis in iaculis leo. Nulla dapibus ullamcorper eros, nec ultricies purus hendrerit eget. Praesent ultrices mauris in urna dapibus, tempor rutrum orci cursus. Morbi aliquam vitae odio nec ultricies.</p>
 					<h3>Sponsors for this event:</h3>
-					<img src="images/fruitDonor1.jpg">
-					<img src="images/fruitDonor2.jpg">
-					<img src="images/fruitDonor3.jpg">
+					<img src="images/fruitDonor1.png">
+					<img src="images/fruitDonor2.png">
+					<img src="images/fruitDonor3.png">
 				</div>
-				<div class="rightCol">
-					<p><span class="label">When</span>Friday November 15th, <br> 7:30 - 10:30pm</p>
-					<p><span class="label">Where</span>The Center for Social Innovation <br> Annex, 720 Bathurst St.</p>
-					<p><span class="label">Tickets</span> $10 at the door / $5 for 2013 volunteers and registered tree owners</p>
+				<div class="rightContent">
+					<div class="eventInfo">
+						<p class="catagory">When</p><p>Friday November 15th, <br> 7:30 - 10:30pm</p>
+					</div>
+					<div class="eventInfo">
+						<p class="catagory">Where</p><p>The Center for Social Innovation <br> Annex, 720 Bathurst St.</p>
+					</div>
+					<div class="eventInfo">
+						<p class="catagory">Tickets</p><p>$10 at the door / $5 for 2013 volunteers and registered tree owners</p>
+					</div>
 				</div>
 			</div>
-			<h1>Past Events</h1>
-			<img src="images/pastEvent1.jpg">
-			<h3>Event Title</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue felis non laoreet ullamcorper. Suspendisse eu iaculis felis, eu egestas nibh. Vivamus ac rhoncus erat. Maecenas scelerisque et sem id laoreet. Sed a lorem adipiscing, congue nunc ac, mattis lacus. Ut ultricies sed tortor ut posuere. Nulla tristique orci ac justo suscipit, gravida volutpat erat pretium. Duis in iaculis leo. Nulla dapibus ullamcorper eros, nec ultricies purus hendrerit eget. Praesent ultrices mauris in urna dapibus, tempor rutrum orci cursus. Morbi aliquam vitae odio nec ultricies.</p>
-			<h3>Sponsors for this event:</h3>
-			<img src="images/fruitDonor1.jpg">
-			<img src="images/fruitDonor2.jpg">
-			<!-- IMAGE GALLERY GOES HERE -->
+			<h1 class="eventsPage">Past Events</h1>
+			<div class="pastEvent">
+				<img class="leftContent"src="images/pastEvent1.jpg">
+				<div class="rightContent">
+					<h2>Event Title</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue felis non laoreet ullamcorper. Suspendisse eu iaculis felis, eu egestas nibh. Vivamus ac rhoncus erat. Maecenas scelerisque et sem id laoreet. Sed a lorem adipiscing, congue nunc ac, mattis lacus. Ut ultricies sed tortor ut posuere. Nulla tristique orci ac justo suscipit, gravida volutpat erat pretium. Duis in iaculis leo. Nulla dapibus ullamcorper eros, nec ultricies purus hendrerit eget. Praesent ultrices mauris in urna dapibus, tempor rutrum orci cursus. Morbi aliquam vitae odio nec ultricies.</p>
+					<h3>Sponsors for this event:</h3>
+					<img src="images/treeDonor1.png">
+					<img src="images/treeDonor2.png">
+				</div>
+				<!-- IMAGE GALLERY GOES HERE -->
+			</div>
 		</div>
 	</div>
 
@@ -85,24 +123,24 @@
 		<div class="footerLists">
 			<ul class="socialMedia">
 				<li><h3>Connect With Us</h3></li>
-				<li><a><img src="images/twitter.svg"> Twitter</a></li>
-				<li><a><img src="images/facebook.svg"> Facebook</a></li>
-				<li><a><img src="images/pinterest.svg"> Pinterest</a></li>
+				<li><img src="images/twitterSmall.png"><a href=""> Twitter</a></li>
+				<li><img src="images/facebookSmall.png"> <a href="">Facebook</a></li>
+				<li><img src="images/pinterestSmall.png"> <a href="">Pinterest</a></li>
 			</ul>
 
 			<ul class="getInvolved">
-				<li><h3>Connect With Us</h3></li>
+				<li><h3>Get Involved</h3></li>
 				<li><a href="#">Register Your Fruit Tree</a></li>
 				<li><a href="#">Volunteer</a></li>
-				<li><a href="#"></a>Donate</li>
+				<li><a href="#">Donate</a></li>
 			</ul>
 
 			<ul class="about">
 				<li><h3>About</h3></li>
 				<li><a href="#">Leadership / Staff</a></li>
 				<li><a href="#">Our Role</a></li>
-				<li><a href="#"></a>History</li>
-				<li><a href="#"></a>Awards and Accolades</li>
+				<li><a href="#">	History</a></li>
+				<li><a href="#">Awards and Accolades</a></li>
 			</ul>
 
 			<ul class="events">
@@ -110,7 +148,7 @@
 				<li><a href="#">City Cider</a></li>
 			</ul>
 
-			<a><h3>Blog</h3></a>
+			<a class="footerBlog"><h3>Blog</h3></a>
 
 			<ul class="contactUs">
 				<li><h3>Contact Us</h3></li>
@@ -119,7 +157,7 @@
 			</ul>
 
 			<section>
-				</h3>Donate</h3>
+				<h3>Donate</h3>
 				<p>Sign Up For Our Newsletter</p>
 				<form>
 					<input type="text" name="email">
@@ -127,7 +165,7 @@
 				</form>
 			</section>
 		</div>
-		<p>Not Far From The Tree © 2013 All Rights Reserved.</p>
+		<p class="legal">Not Far From The Tree © 2013 All Rights Reserved.</p>
 	</div>
 
 
