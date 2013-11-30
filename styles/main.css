@@ -76,6 +76,7 @@ body {
   float: right;
   margin-right: 50px;
   margin-top: 35px;
+  padding-left: 0;
 }
 #headerWrapper ul li {
   margin: 0 5px;
@@ -95,11 +96,15 @@ body {
   background: -webkit-linear-gradient(top, #556a3f 0%, #607848 50%, #556a3f 100%);
   margin-top: -33px;
 }
+#navWrapper img#menuButton {
+  display: none;
+}
 #navWrapper nav {
   text-align: center;
 }
 #navWrapper nav ul {
   margin: 0;
+  padding: 0;
 }
 #navWrapper nav ul li {
   display: inline-block;
@@ -122,7 +127,7 @@ body {
   z-index: 100;
   width: 200px;
 }
-.drowDown {
+.dropDown {
   display: block;
   width: 100%;
 }
@@ -141,6 +146,7 @@ body {
   clear: both;
   margin: 0 35px;
   color: #ffffff;
+  vertical-align: middle;
 }
 #sliderWrapper section img {
   height: 80px;
@@ -167,7 +173,6 @@ body {
 }
 #mainContentWrapper .leftCol {
   overflow: hidden;
-  max-width: 520px;
   width: 44%;
   float: left;
 }
@@ -181,11 +186,12 @@ body {
 }
 #mainContentWrapper .leftCol .blogPost img {
   float: left;
+  width: 30%;
 }
 #mainContentWrapper .leftCol .blogPost .floatText {
   float: left;
-  margin-left: 20px;
-  width: 320px;
+  margin-left: 5%;
+  width: 65%;
 }
 #mainContentWrapper .leftCol .blogPost .floatText h3 {
   margin: 0;
@@ -207,7 +213,6 @@ body {
 }
 #mainContentWrapper .rightCol {
   overflow: hidden;
-  max-width: 520px;
   width: 44%;
   float: right;
 }
@@ -499,4 +504,161 @@ body {
 #footerWrapper p.legal {
   font-size: 0.8em;
   color: #ffffff;
+}
+@media screen and (max-width: 800px) {
+  #headerWrapper #donate {
+    float: right;
+    width: 100px;
+    margin-top: -23px;
+    margin-right: 10px;
+  }
+  #headerWrapper #mainLogo {
+    float: left;
+    width: 120px;
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+  #navWrapper {
+    margin-top: -25px;
+  }
+  #navWrapper img#menuButton {
+    display: block;
+    width: 80px;
+    padding: 15px;
+  }
+  #navWrapper nav {
+    text-align: center;
+  }
+  #navWrapper nav ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #c0d860;
+  }
+  #navWrapper nav ul li {
+    display: block;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: solid 2px #556a3f;
+  }
+  #navWrapper nav ul li a {
+    font-size: 1.4em;
+  }
+  #navWrapper nav ul li:hover ul {
+    display: none;
+  }
+  #navWrapper nav ul li ul {
+    position: inherit;
+    display: none;
+    background-color: #556a3f;
+    padding: 0;
+    margin-top: 15px;
+    z-index: 100;
+    width: 100%;
+  }
+  #navWrapper nav ul li ul li {
+    border-bottom: solid 2px #607848;
+  }
+  #mainContentWrapper .leftCol,
+  #mainContentWrapper .rightCol {
+    width: 100%;
+    float: none;
+    margin: 0;
+    padding: 20px;
+    font-size: 1.1em;
+  }
+  #mainContentWrapper .leftCol a.readMore {
+    padding: 15px;
+  }
+  .footerLists {
+    font-size: 1.2em;
+  }
+  .footerLists ul li h3 {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 550px) {
+  #headerWrapper {
+    overflow: hidden;
+    background-color: white;
+    padding-bottom: 10px;
+  }
+  #headerWrapper #mainLogo {
+    float: left;
+    width: 100px;
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+  #headerWrapper ul {
+    float: right;
+    margin-right: 10px;
+    margin-top: 35px;
+    padding-left: 0;
+  }
+  #headerWrapper ul li {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  #headerWrapper ul li a img {
+    width: 44px;
+  }
+  #headerWrapper #donate {
+    width: 75px;
+    margin-top: 0;
+    margin-right: 0;
+  }
+  #navWrapper img#menuButton {
+    display: block;
+    width: 60px;
+    padding: 10px;
+  }
+  #sliderWrapper section {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  #sliderWrapper section div.sliderText {
+    width: 62%;
+    float: right;
+    padding-top: 10px;
+  }
+  #mainSliderWrapper,
+  #footerWrapper,
+  #sponsorsWrapper {
+    display: none;
+  }
+  #mainContentWrapper .leftCol .blogPost img {
+    float: none;
+    width: auto;
+  }
+  #mainContentWrapper .leftCol .blogPost .floatText {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 360px) {
+  #headerWrapper #mainLogo {
+    width: 90px;
+  }
+  #headerWrapper ul {
+    margin: 20px 0 0;
+  }
+  #headerWrapper #donate {
+    width: 70px;
+  }
+  #sliderWrapper section img {
+    height: 60px;
+    margin-left: 5px;
+  }
+  #sliderWrapper section div.sliderText {
+    width: 70%;
+    float: right;
+    padding-top: 10px;
+  }
+  #sliderWrapper section div.sliderText h1 {
+    font-size: 1.7em;
+  }
 }

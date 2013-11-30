@@ -35,6 +35,8 @@ body {
 		float: right;
 		margin-right: 50px;
 		margin-top: 35px;
+		padding-left: 0;
+
 		li{
 			margin: 0 5px;
 			display: inline-block;
@@ -58,11 +60,14 @@ body {
 #navWrapper{
 	background: -webkit-linear-gradient(top, @darkergreen 0%,@darkgreen 50%,@darkergreen 100%);
 	margin-top: -33px;
-	
+	img#menuButton{
+		display: none;
+	}
 	nav{
 		text-align: center;
 		ul {
 			margin: 0;
+			padding: 0;
 			li{
 				display: inline-block;
 				margin: 0 25px;
@@ -87,7 +92,7 @@ body {
 		}
 	}
 }
-.drowDown{
+.dropDown{
 	display: block;
 	width: 100%;
 }
@@ -106,6 +111,7 @@ body {
 		clear: both;
 		margin: 0 35px;
 		color: @white;
+		vertical-align: middle;
 		img{
 			height: 80px;
 			float: left;
@@ -134,7 +140,6 @@ body {
 	padding-top: 35px;
 	.leftCol{
 		overflow: hidden;
-		max-width: 520px;
 		width: 44%;
 		float: left;
 		h2{
@@ -146,11 +151,13 @@ body {
 			width: 100%;
 			img{
 				float: left;
+				width: 30%;
 			}
 			.floatText{
 				float: left;
-				margin-left: 20px;
-				width: 320px;
+				margin-left: 5%;
+				width: 65%;
+
 				h3{
 					margin: 0;
 					font-size: 1.4em;
@@ -174,7 +181,6 @@ body {
 	}
 	.rightCol{
 		overflow: hidden;
-		max-width: 520px;
 		width: 44%;
 		float: right;
 		h2{
@@ -463,4 +469,192 @@ body {
 			font-size: 0.8em;
 			color: @white;
 		}
+}
+
+@media screen and (max-width: 800px){
+	#headerWrapper {
+		#donate{
+			float: right;
+			width: 100px;
+			margin-top:-23px;
+			margin-right: 10px;
+		}
+		#mainLogo{
+			float: left;
+			width: 120px;
+			margin-left: 0px;
+			margin-top: 15px;
+		}
+	}
+
+	#navWrapper{
+		margin-top: -25px;
+		img#menuButton{
+			display: block;
+			width: 80px;
+			padding: 15px;
+		}
+		nav{
+			text-align: center;
+
+			ul {
+				margin: 0;
+				padding: 0;
+				display: none;
+				background-color: @green;
+				li{
+					display: block;
+					margin: 0;
+					padding: 10px 0;
+					border-bottom: solid 2px @darkergreen;
+
+					a{
+						font-size: 1.4em;
+					}
+					&:hover ul{
+						display: none;
+					}
+					ul{
+						position: inherit;
+						display: none;
+						background-color: @darkergreen;
+						padding: 0;
+						margin-top: 15px;
+						z-index: 100;
+						width: 100%;
+						li{
+							border-bottom: solid 2px @darkgreen;
+						}
+					}
+				}
+			}
+		}
+	}
+	#mainContentWrapper{
+		.leftCol, .rightCol{
+			width: 100%;
+			float: none;
+			margin: 0;
+			padding: 20px;
+			font-size: 1.1em;
+		}
+		.leftCol a.readMore{
+			padding: 15px;
+			
+		}
+
+	}
+	.footerLists{
+		font-size: 1.2em;
+		ul li h3{
+			margin-top: 10px;
+		}
+	}
+	
+}
+
+@media screen and (max-width: 550px){
+	#headerWrapper{
+		overflow: hidden;
+		background-color: white;
+		padding-bottom: 10px;
+		#mainLogo{
+			float: left;
+			width: 100px;
+			margin-left: 0px;
+			margin-top: 15px;
+		}
+		ul{
+			float: right;
+			margin-right: 10px;
+			margin-top: 35px;
+			padding-left: 0;
+
+			li{
+				margin:0;
+				display: inline-block;
+				vertical-align: middle;
+				a{
+					img{
+						width: 44px;
+
+					}
+				}
+			}
+		}
+		#donate{
+			width: 75px;
+			margin-top: 0;
+			margin-right: 0;
+		}
+	}
+	#navWrapper{
+		img#menuButton{
+			display: block;
+			width: 60px;
+			padding: 10px;
+		}
+	}
+	#sliderWrapper{
+
+		section{
+			width: 100%;
+			text-align: center;
+			margin-left: 0;
+			margin-bottom: 20px;			
+			div.sliderText{
+				width:62%;
+				float: right;
+				padding-top: 10px;
+			}
+
+		}
+	}
+	#mainSliderWrapper, #footerWrapper, #sponsorsWrapper{
+		display: none;
+	}
+	#mainContentWrapper .leftCol .blogPost{
+		img{
+			float: none;
+			width: auto;
+		}
+		.floatText{
+			float: none;
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+		
+}
+@media screen and (max-width: 360px){
+	#headerWrapper{
+		#mainLogo{
+			width: 90px;
+		}
+		ul{
+			margin: 20px 0 0;
+		}
+		#donate{
+			width: 70px;
+		}
+	}
+
+	#sliderWrapper{
+
+		section{
+			img{
+				height: 60px;
+				margin-left: 5px;
+			}		
+			div.sliderText{
+				width:70%;
+				float: right;
+				padding-top: 10px;
+				h1{
+					font-size: 1.7em;
+				}
+			}
+
+		}
+	}
 }
