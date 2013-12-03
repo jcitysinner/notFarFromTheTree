@@ -559,9 +559,6 @@ body {
   #navWrapper nav ul li ul li {
     border-bottom: solid 2px #607848;
   }
-  #mainContentWrapper {
-    padding: 5px;
-  }
   #mainContentWrapper .leftCol,
   #mainContentWrapper .rightCol {
     width: 100%;
@@ -573,19 +570,13 @@ body {
   #mainContentWrapper .leftCol a.readMore {
     padding: 15px;
   }
-  #mainContentWrapper .upcommingEvent .leftContent,
-  #mainContentWrapper .pastEvent .leftContent {
+  #mainContentWrapper .upcommingEvent .leftContent {
     width: 100%;
     float: none;
   }
-  #mainContentWrapper .upcommingEvent .rightContent,
-  #mainContentWrapper .pastEvent .rightContent {
+  #mainContentWrapper .upcommingEvent .rightContent {
     width: 100%;
     float: none;
-  }
-  #mainContentWrapper .upcommingEvent .rightContent h2,
-  #mainContentWrapper .pastEvent .rightContent h2 {
-    margin-top: 15px;
   }
   .footerLists {
     font-size: 1.2em;
