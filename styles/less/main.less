@@ -54,6 +54,7 @@ body {
 		width: 140px;
 		margin-top:-30px;
 		margin-right: 10px;
+
 	}
 }
 
@@ -98,8 +99,17 @@ body {
 }
 
 #mainSliderWrapper{
-	background-color: lighten(@beige,8%);
-	padding-top: 30px;
+	background-image: url(../images/slider1.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 100px;
+	h1{
+		color: white;
+		background-color: fade(@darkgreen, 80%);
+		.textShadow;
+		padding: 10px;
+		width: 60%;
+	}
 }
 #sliderWrapper{
 	background: -webkit-linear-gradient(top, @darkergreen 0%,@darkgreen 50%,@darkergreen 100%);
@@ -190,10 +200,19 @@ body {
 		img{
 			width: 100%;
 		}
+		a.readMore{
+			color: @white;
+			background-color: @brown;
+			padding: 7px;
+			margin-bottom: 30px;
+			display: inline-block;
+			float: right;
+		}
 	}
 
 	p.breadCrumbs{
-		color: @darkgreen;	
+		color: @darkgreen;
+		margin-bottom: 10px;	
 		a{
 			color: @darkgreen;	
 		}
@@ -212,6 +231,11 @@ body {
 		overflow: hidden;
 		clear: both;
 		margin-bottom: 30px;
+		border-radius: 15px;
+		.pin{
+			float: right;
+			margin-right: -15px;
+		}
 		h2{
 			color: @black;
 			text-decoration: underline;
@@ -254,14 +278,28 @@ body {
 			float: left;
 			width: 48%;
 			border: solid 6px white;
+			clear: both;
 			.boxShadow;
 			h3{
 				font-size: 1.4em;
 			}
 		}
+		.galleryLink{
+			display: block;
+			clear: both;
+			text-align: center;
+			padding-top: 50px;
+			font-size: 1.5em;
+			color: @darkgreen;
+			text-decoration: underline;
+			&:hover{
+				color: @green;
+			}
+		}
 		.rightContent{
 			float: right;
 			width: 48%;
+			overflow: hidden;
 			h2{
 				color: @black;
 				text-decoration: underline;
@@ -276,8 +314,15 @@ body {
 	h1.donationPage{
 		color: @darkgreen;
 		border-bottom: @green solid 1px;
+		margin: 10px 0;
 	}
-
+	.leftColumn{
+		width: 48%;
+		float: left;
+		img{
+			width: 100%;
+		}
+	}
 	.rightColumn{
 		width: 48%;
 		overflow: hidden;
@@ -294,11 +339,16 @@ body {
 			}
 			clear: all;
 			div.paymentTotal{
+				width: 200px;
+				margin: 25px auto 15px;
+				float: none;
 				input.mainCash{
 					font-size: 2.2em;
 					padding: 5px;
 					width: 200px;
 					display: block;
+					margin: 10px auto;
+
 				}
 				p{
 					display: inline;
@@ -432,6 +482,20 @@ body {
 		ul.socialMedia{
 			border-right: 1px solid darken(@green, 20%);
 			padding-right: 25px;
+			div.smImage{
+				display: inline-block;
+				width: 50px;
+				text-align: center;	
+			}
+			li{
+				margin-top: 0;
+				vertical-align: top;
+				margin-bottom: 10px;
+				a{
+					margin-top: 0;
+					vertical-align: 7px;
+				}
+			}
 		}
 		.footerBlog{
 			display: inline-block;
@@ -530,6 +594,12 @@ body {
 			}
 		}
 	}
+	#mainSliderWrapper{
+		padding: 50px;
+		h1{
+			width: 100%;
+		}
+	}
 	#mainContentWrapper{
 		padding: 5px;
 		.leftCol, .rightCol{
@@ -558,13 +628,16 @@ body {
 	    	}
 
 	    }
+	    .leftColumn{
+	    	display: none;
+	    }
+	    .rightColumn{
+	    	width: 100%;
+	    }
 
 	}
-	.footerLists{
-		font-size: 1.2em;
-		ul li h3{
-			margin-top: 10px;
-		}
+	#footerWrapper{
+		display: none;
 	}
 	
 }

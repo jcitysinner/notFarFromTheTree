@@ -2,9 +2,9 @@
 		<div class="footerLists">
 			<ul class="socialMedia">
 				<li><h3>Connect With Us</h3></li>
-				<li><img src="images/twitterSmall.png"><a href=""> Twitter</a></li>
-				<li><img src="images/facebookSmall.png"> <a href="">Facebook</a></li>
-				<li><img src="images/pinterestSmall.png"> <a href="">Pinterest</a></li>
+				<li><div class="smImage"><img src="images/twitterSmall.png"></div><a href="">Twitter</a></li>
+				<li><div class="smImage"><img src="images/facebookSmall.png"> </div><a href="">Facebook</a></li>
+				<li><div class="smImage"><img src="images/pinterestSmall.png"> </div><a href="">Pinterest</a></li>
 			</ul>
 
 			<ul class="getInvolved">

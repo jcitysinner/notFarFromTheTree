@@ -7,6 +7,7 @@
 
   <link rel="shortcut icon" href="images/favicon.png"> 
   <link rel="apple-itouch-icon" href="images/favicon.png">
+  <meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0" />
 
     <!-- Stylesheets -->
     
@@ -43,7 +44,7 @@
 
 	<div class="fullWidth" id="headerWrapper">
 		<div class="wrapper">
-			<img id="mainLogo" src="images/logo.png">
+			<a href="index.php"><img id="mainLogo" src="images/logo.png"></a>
 			<a href="donate.php"><img id="donate" src="images/donate.png"></a>
 			<ul>
 				<li><a href="#"><img src="images/facebook.png"></a></li>

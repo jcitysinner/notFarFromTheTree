@@ -4,12 +4,13 @@
 	<div class="fullWidth" id="mainContentWrapper">
 		<div class="wrapper">
 			<p class="breadCrumbs"><a href="#">HOME</a> > <a href="#">EVENTS</a></p>
-			<h1 class="eventsPage">Upcomming Events</h1>
+			<h1 class="eventsPage">Upcoming Events</h1>
 			<div class="upcommingEvent">
-				<h2>Event Title</h2>
+				<img class="pin" src="images/pin.png">
+				<h2>End of Season Celebration</h2>
 				<div class="leftContent">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue felis non laoreet ullamcorper. Suspendisse eu iaculis felis, eu egestas nibh. Vivamus ac rhoncus erat. Maecenas scelerisque et sem id laoreet. Sed a lorem adipiscing, congue nunc ac, mattis lacus. .</p>
-					<p>Nulla tristique orci ac justo suscipit, gravida volutpat erat pretium. Duis in iaculis leo. Nulla dapibus ullamcorper eros, nec ultricies purus hendrerit eget. Praesent ultrices mauris in urna dapibus, tempor rutrum orci cursus. Morbi aliquam vitae odio nec ultricies.</p>
+					<p>Have you been outside lately? The seasons they are a’changing, and you know what that means… It’s time to PARTY! Let’s come together to celebrate Not Far From The Tree’s biggest year ever, and more importantly the people who helped make it happen!</p>
+					<p>Come into the warm with good friends new and old for some Friday night drinks or simply show up to chill out. We have all kinds of party tricks up our sleeve. Prepare for awesome raffle prizes, tasty treats (think gourmet grilled-cheesers and apple crumble) and an array of libations to wash it all down and keep the fires burning.</p>
 				</div>
 				<div class="rightContent">
 					<div class="eventInfo">
@@ -27,9 +28,10 @@
 				<p class="extraText">*All proceeds go to support Not Far From The Tree's tree picking program</p>
 			</div>
 			<div class="upcommingEvent">
-				<h2>Event Title</h2>
+				<img class="pin" src="images/pin.png">
+				<h2>Black Walnut Ink Workshop</h2>
 				<div class="leftContent">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue felis non laoreet ullamcorper. Suspendisse eu iaculis felis, eu egestas nibh. Vivamus ac rhoncus erat. Maecenas scelerisque et sem id laoreet. Sed a lorem adipiscing, congue nunc ac, mattis lacus. Ut ultricies sed tortor ut posuere. Nulla tristique orci ac justo suscipit, gravida volutpat erat pretium. Duis in iaculis leo. Nulla dapibus ullamcorper eros, nec ultricies purus hendrerit eget. Praesent ultrices mauris in urna dapibus, tempor rutrum orci cursus. Morbi aliquam vitae odio nec ultricies.</p>
+					<p>When life gives you walnuts, make walnut ink! We’re teaming up with the Contemporary Textile Studio Co-op for a Black Walnut Ink & Dye Workshop. In this rare workshop instructed by textile designer Thea Haines, you will get the chance to dye silk and wool textile samples and draw with the freshly extracted and thickened ink on beautiful Japanese paper.</p>
 					<h3>Sponsors for this event:</h3>
 					<img src="images/fruitDonor1.png">
 					<img src="images/fruitDonor2.png">
@@ -51,13 +53,14 @@
 			<div class="pastEvent">
 				<img class="leftContent"src="images/pastEvent1.jpg">
 				<div class="rightContent">
-					<h2>Event Title</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue felis non laoreet ullamcorper. Suspendisse eu iaculis felis, eu egestas nibh. Vivamus ac rhoncus erat. Maecenas scelerisque et sem id laoreet. Sed a lorem adipiscing, congue nunc ac, mattis lacus. Ut ultricies sed tortor ut posuere. Nulla tristique orci ac justo suscipit, gravida volutpat erat pretium. Duis in iaculis leo. Nulla dapibus ullamcorper eros, nec ultricies purus hendrerit eget. Praesent ultrices mauris in urna dapibus, tempor rutrum orci cursus. Morbi aliquam vitae odio nec ultricies.</p>
+					<h2>City Cider</h2>
+					<p>Nestled in an urban heritage orchard on historic grounds, City Cider is a late summer afternoon cider celebration for all ages. This annual event features live music, delectable eats, freshly pressed cider, hard cider from Ontario cideries, magic for the little ones, field games, and so much more!
+</p>
 					<h3>Sponsors for this event:</h3>
 					<img src="images/treeDonor1.png">
 					<img src="images/treeDonor2.png">
 				</div>
-				<!-- IMAGE GALLERY GOES HERE -->
+				<a href="http://www.flickr.com/photos/notfarfromthetree/sets/72157636027323626/" target="_blank" class="galleryLink">View Event Image Gallery</a>
 			</div>
 		</div>
 	</div>

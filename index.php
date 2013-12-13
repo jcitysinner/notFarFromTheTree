@@ -1,94 +1,9 @@
 <?php include("includes/header.php"); ?>
 
-<<<<<<< HEAD:index.php
-=======
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <title>Not Far From The Tree</title>
-
-  <link rel="shortcut icon" href="images/favicon.png"> 
-  <link rel="apple-itouch-icon" href="images/favicon.png">
-
-    <!-- Stylesheets -->
-    
-  <link rel="stylesheet" href="styles/main.css" type="text/css" media="screen" />
-
-	<script src="js/jquery-1.10.2.min.js"> </script>
-
-	<!-- Place somewhere in the <head> of your document -->
-<link rel="stylesheet" href="js/slider/flexslider.css" type="text/css">
-<script src="js/slider/jquery.flexslider.js"></script>
-
-<script type="text/javascript" charset="utf-8">
-  $(window).load(function() {
-    $('.flexslider').flexslider();
-  });
-</script>
-
-</head>
-<body>
-
-	<div class="fullWidth" id="headerWrapper">
-		<div class="wrapper">
-			<img id="mainLogo" src="images/logo.png">
-			<a href="donate.html"><img id="donate" src="images/donate.png"></a>
-			<ul>
-				<li><a href="#"><img src="images/facebook.png"></a></li>
-				<li><a href="#"><img src="images/twitter.png"></a></li>
-				<li><a href="#"><img src="images/pinterest.png"></a></li>
-			</ul>
-		</div>	
-	</div>
-	<!-- Hi Jesse! -->
-	<div class="fullWidth" id="navWrapper">
-		<div class="wrapper">
-			<nav>
-				<ul>
-					<li><a href="#">Get Involved</a>
-						<ul>
-							<li><a href="#" class="dropDown">Volunteer</a></li>
-							<li><a href="donate.html" class="dropDown">Donate</a></li>
-							<li><a href="#" class="dropDown">Register Your Fruit Tree</a></li>
-						</ul>
-					</li>
-					<li><a href="#">About</a>
-						<ul>
-							<li><a href="#">Awards and Accolades</a></li>
-							<li><a href="#">Annual Reports</a></li>
-						</ul>
-					</li>
-					<li><a href="events.html">Events</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contact Us</a>
-						<ul>
-							<li><a href="#">Request Fruit Donations</a></li>
-							<li><a href="#">Recieve Our Newsletter</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</div>
->>>>>>> 28959550418e3c540f3cdf0a527c7347e43e8886:index.html
 	<div class="fullWidth" id="mainSliderWrapper">
 		<div class="wrapper">
-			<div class="flexslider">
-			  <ul class="slides">
-			    <li>
-			      <img src="images/slider1.jpg" />
-			      <p class="flex-caption">Captions and cupcakes. Winning combination.</p>
-			    </li>
-			    <li>
-			      <img src="images/slider1.jpg" />
-			    </li>
-			    <li>
-			      <img src="images/slider1.jpg" />
-			    </li>
-			  </ul>
-			</div>
+			<h1>Not Far From the Tree puts Toronto's fruit to good use by picking and sharing the bounty.</h1>
 		</div>
 	</div>
 	<div class="fullWidth" id="sliderWrapper">
@@ -153,6 +68,7 @@
 				<img src="images/aboutImage.png">
 				<p>Not Far From The Tree puts Toronto’s fruit to good use by picking and sharing the bounty.</p>
 				<p>When a homeowner can’t keep up with the abundant harvest produced by their tree, they let us know and we mobilize our volunteers to pick the bounty. The harvest is split three ways: 1/3 is offered to the tree owner, 1/3 is shared among the volunteers, and 1/3 is delivered by bicycle to be donated to food banks, shelters, and community kitchens in the neighbourhood so that we’re putting this existing source of fresh fruit to good use. It’s a win-win-win situation!</p>
+				<a href="#" class="readMore">READ MORE</a>
 			</section>
 		</div>
 	</div>

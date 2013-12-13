@@ -19,7 +19,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed", "HelveticaNeueRomanCondensed", "HelveticaNeue-Roman-Condensed", "Helvetica Neue Roman Condensed", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosCnRegular', "Helvetica", "Tahoma", "Geneva", "Arial Narrow", "Arial", sans-serif;
   font-weight: 700;
   line-height: 1em;
 }
@@ -36,7 +36,7 @@ h4 {
   font-size: 1.4em;
 }
 .textShadow {
-  text-shadow: 2px 2px 2px #000000;
+  text-shadow: 1px 1px 1px #000000;
 }
 .boxShadow {
   -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
@@ -49,7 +49,7 @@ h4 {
   box-sizing: border-box;
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed", "HelveticaNeueRomanCondensed", "HelveticaNeue-Roman-Condensed", "Helvetica Neue Roman Condensed", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosCnRegular', "Helvetica", "Tahoma", "Geneva", "Arial Narrow", "Arial", sans-serif;
   font-size: 1em;
   color: #141414;
   margin: 0;
@@ -113,7 +113,7 @@ body {
 }
 #navWrapper nav ul li a {
   font-size: 1.2em;
-  text-shadow: 2px 2px 2px #000000;
+  text-shadow: 1px 1px 1px #000000;
 }
 #navWrapper nav ul li:hover ul {
   display: block;
@@ -132,8 +132,17 @@ body {
   width: 100%;
 }
 #mainSliderWrapper {
-  background-color: #fbfbf5;
-  padding-top: 30px;
+  background-image: url(../images/slider1.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+}
+#mainSliderWrapper h1 {
+  color: white;
+  background-color: rgba(96, 120, 72, 0.8);
+  text-shadow: 1px 1px 1px #000000;
+  padding: 10px;
+  width: 60%;
 }
 #sliderWrapper {
   background: -webkit-linear-gradient(top, #556a3f 0%, #607848 50%, #556a3f 100%);
@@ -160,7 +169,7 @@ body {
 }
 #sliderWrapper section div.sliderText h1 {
   margin: 0;
-  text-shadow: 2px 2px 2px #000000;
+  text-shadow: 1px 1px 1px #000000;
 }
 #sliderWrapper section div.sliderText p {
   margin: 5px 0;
@@ -223,8 +232,17 @@ body {
 #mainContentWrapper .rightCol img {
   width: 100%;
 }
+#mainContentWrapper .rightCol a.readMore {
+  color: #ffffff;
+  background-color: #604848;
+  padding: 7px;
+  margin-bottom: 30px;
+  display: inline-block;
+  float: right;
+}
 #mainContentWrapper p.breadCrumbs {
   color: #607848;
+  margin-bottom: 10px;
 }
 #mainContentWrapper p.breadCrumbs a {
   color: #607848;
@@ -240,6 +258,11 @@ body {
   overflow: hidden;
   clear: both;
   margin-bottom: 30px;
+  border-radius: 15px;
+}
+#mainContentWrapper .upcommingEvent .pin {
+  float: right;
+  margin-right: -15px;
 }
 #mainContentWrapper .upcommingEvent h2 {
   color: #141414;
@@ -281,6 +304,7 @@ body {
   float: left;
   width: 48%;
   border: solid 6px white;
+  clear: both;
   -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
@@ -288,9 +312,22 @@ body {
 #mainContentWrapper .pastEvent .leftContent h3 {
   font-size: 1.4em;
 }
+#mainContentWrapper .pastEvent .galleryLink {
+  display: block;
+  clear: both;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 1.5em;
+  color: #607848;
+  text-decoration: underline;
+}
+#mainContentWrapper .pastEvent .galleryLink:hover {
+  color: #c0d860;
+}
 #mainContentWrapper .pastEvent .rightContent {
   float: right;
   width: 48%;
+  overflow: hidden;
 }
 #mainContentWrapper .pastEvent .rightContent h2 {
   color: #141414;
@@ -303,6 +340,14 @@ body {
 #mainContentWrapper h1.donationPage {
   color: #607848;
   border-bottom: #c0d860 solid 1px;
+  margin: 10px 0;
+}
+#mainContentWrapper .leftColumn {
+  width: 48%;
+  float: left;
+}
+#mainContentWrapper .leftColumn img {
+  width: 100%;
 }
 #mainContentWrapper .rightColumn {
   width: 48%;
@@ -321,11 +366,17 @@ body {
   font-weight: normal;
   border-bottom: solid black 1px;
 }
+#mainContentWrapper .rightColumn form div.paymentTotal {
+  width: 200px;
+  margin: 25px auto 15px;
+  float: none;
+}
 #mainContentWrapper .rightColumn form div.paymentTotal input.mainCash {
   font-size: 2.2em;
   padding: 5px;
   width: 200px;
   display: block;
+  margin: 10px auto;
 }
 #mainContentWrapper .rightColumn form div.paymentTotal p {
   display: inline;
@@ -471,6 +522,20 @@ body {
   border-right: 1px solid #8fa929;
   padding-right: 25px;
 }
+#footerWrapper .footerLists ul.socialMedia div.smImage {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+}
+#footerWrapper .footerLists ul.socialMedia li {
+  margin-top: 0;
+  vertical-align: top;
+  margin-bottom: 10px;
+}
+#footerWrapper .footerLists ul.socialMedia li a {
+  margin-top: 0;
+  vertical-align: 7px;
+}
 #footerWrapper .footerLists .footerBlog {
   display: inline-block;
   vertical-align: top;
@@ -559,6 +624,12 @@ body {
   #navWrapper nav ul li ul li {
     border-bottom: solid 2px #607848;
   }
+  #mainSliderWrapper {
+    padding: 50px;
+  }
+  #mainSliderWrapper h1 {
+    width: 100%;
+  }
   #mainContentWrapper {
     padding: 5px;
   }
@@ -587,11 +658,14 @@ body {
   #mainContentWrapper .pastEvent .rightContent h2 {
     margin-top: 15px;
   }
-  .footerLists {
-    font-size: 1.2em;
+  #mainContentWrapper .leftColumn {
+    display: none;
   }
-  .footerLists ul li h3 {
-    margin-top: 10px;
+  #mainContentWrapper .rightColumn {
+    width: 100%;
+  }
+  #footerWrapper {
+    display: none;
   }
 }
 @media screen and (max-width: 550px) {

@@ -5,14 +5,16 @@
 		<div class="wrapper">
 			<p class="breadCrumbs"><a>HOME</a> > <a>DONATE</a></p>
 			<h1 class="donationPage">Donation</h1>
-			<div class="">
-				<!-- LEFT COL CONTENT GOES HERE TBD TBD TBD TBD -->
+			<div class="leftColumn">
+				<p>Your donation will be put to work immediately by stewarding Toronto’s urban orchard, building community, and making use of an existing source of fresh fruit for those who are most in need.</p>
+				<img src="images/thermom.png">
 			</div>
 			<div class="rightColumn">
 				<h2>Donate Information</h2>
 				<!--SLIDER TO BE BUILT-->
 				<form action="thankyou.php" method="post">
 					<div class="paymentTotal">
+						<p>Donation Ammount</p>
 						<input class="mainCash" type="text" name="cash">
 						<p><input type="radio" name="oneTime" value="One Time"> One Time</p>
 						<p><input type="radio" name="monthly" value="Monthly"> Monthly</p>
